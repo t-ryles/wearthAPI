@@ -1,0 +1,22 @@
+{
+  "name": "wearthapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-ryles/wearthAPI.git"
+  },
+  "author": "Taj-Hakeem Ryles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-ryles/wearthAPI/issues"
+  },
+  "homepage": "https://github.com/t-ryles/wearthAPI#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}

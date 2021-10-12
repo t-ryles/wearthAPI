@@ -1,0 +1,18 @@
+Open Weather API
+
+
+URl-
+https://api.openweathermap.org/
+
+Query string-
+data/2.5/weather?zip=68503&appid=
+
+Weather is paramter for the URL
+Weather is a key value pair, vip is the key, 68503 is the value
+
+& represents a new key value pair
+
+API key-
+33ab3095254bd17ee34ffbc3d339e0d4
+
+Returns JSON data

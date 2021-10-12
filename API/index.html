@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
-        </style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');</style>
+    <script src="https://kit.fontawesome.com/f11b863e94.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Weather API</title>
 </head>
 <body>
     <div class="container">
         <h1>Weather API</h1>
-        <h3>Enter zip code:<input id="zipCode" type="number" size="4"><input id="btn" type="submit">
+        <h3>Enter zip code:<input id="zipCode" type="number" size="4">
+            <input id="btn" type="submit">
         </h3>
         <div id="imgDiv"></div>
-        <p>City:<span id="city"></span></p>
-        <p>Temp:<span id="temp"></span></p>
+        <p><i class="fas fa-thermometer-half"></i><span id="temp"></span></p>
         <p>Feels like:<span id="feels"></span></p>
+        <p><i class="fas fa-street-view"></i><span id="city"></span></p>
     </div>
 </body>
 <script src="app.js"></script>
