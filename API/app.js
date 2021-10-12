@@ -1,6 +1,6 @@
 console.log("About to fetch weather data.");
 
-apiKey = "33ab3095254bd17ee34ffbc3d339e0d4"
+apiKey = ""
 units = "imperial"
 
 
