@@ -16,15 +16,16 @@
 <body>
     <div class="container">
         <h1>Weather API</h1>
-        <h3>Enter zip code:<input id="zipCode" type="number" size="4">
+        <h3>Enter zip code: <input id="zipCode" type="text" size="8" onfocus="this.value=''">
             <input id="btn" type="submit">
         </h3>
+        <p id="error"></p>
         <div id="imgDiv"></div>
         <p><i class="fas fa-thermometer-half"></i><span id="temp"></span></p>
         <p>Feels like:<span id="feels"></span></p>
         <p><i class="fas fa-street-view"></i><span id="city"></span></p>
     </div>
 </body>
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 
 </html>

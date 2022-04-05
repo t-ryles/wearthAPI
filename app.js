@@ -1,13 +1,28 @@
 console.log('About to fetch weather data.');
 import apiKey from './key.js';
 
-let units = 'imperial';
+const units = 'imperial';
+const submitBTN = document.getElementById('btn');
 
-submitBTN = document.getElementById('btn');
+const city = document.getElementById('city');
+const temp = document.getElementById('temp');
+const feels = document.getElementById('feels');
+const error = document.getElementById('error');
+
+const img = document.createElement('img');
 
 submitBTN.addEventListener('click', (weatherData) => {
-	zipcode = document.getElementById('zipCode').value;
-	imgDiv = document.getElementById('imgDiv');
+	city.textContent = '';
+	temp.textContent = '';
+	feels.textContent = '';
+	error.textContent = '';
+
+	let zipcode = document.getElementById('zipCode').value;
+
+	if (zipcode.length != 5) {
+		error.textContent = 'Please enter a valided US Zipcode.';
+	}
+	let imgDiv = document.getElementById('imgDiv');
 
 	async function weatherData() {
 		const response = await fetch(
@@ -17,16 +32,18 @@ submitBTN.addEventListener('click', (weatherData) => {
 		//The await key word is waiting for the response from the fetch function, then converting it into JSON data.
 		const data = await response.json();
 		//respose.json returns a promise, so we have to await that response.
-		const img = document.createElement('img');
+		img.scr = '';
 		const imgCode = data.weather[0].icon;
 		//console.log(imgCode);
 		img.src = `http://openweathermap.org/img/wn/${imgCode}@2x.png`;
 		//console.log(img.src);
 		imgDiv.append(img);
 
-		document.getElementById('city').append(' ' + data.name);
-		document.getElementById('temp').append(' ' + data.main.temp);
-		document.getElementById('feels').append(' ' + data.main.feels_like);
+		city.textContent = '';
+
+		city.append(' ' + data.name);
+		temp.append(' ' + data.main.temp);
+		feels.append(' ' + data.main.feels_like);
 	}
 
 	weatherData().catch((error) => {
