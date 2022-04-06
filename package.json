@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/t-ryles/wearthAPI#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "dotenv": "^16.0.0"
+    "@fortawesome/fontawesome-free": "^5.15.4"
   },
   "devDependencies": {
     "jest": "^27.5.1"
