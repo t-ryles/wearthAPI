@@ -1,9 +1,5 @@
-//console.log('About to fetch weather data.');
-
-//import apiKey from './key.js';
-
-console.log(process.env.API_KEY);
-const API_KEY = process.env.API_KEY;
+console.log('About to fetch weather data.');
+import apiKey from './key.js';
 
 const units = 'imperial';
 const submitBTN = document.getElementById('btn');
@@ -30,7 +26,7 @@ submitBTN.addEventListener('click', (weatherData) => {
 
 	async function weatherData() {
 		const response = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&&units=${units}&appid=${API_KEY}`
+			`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&&units=${units}&appid=${apiKey}`
 		);
 		//Checking the url response status
 		//The await key word is waiting for the response from the fetch function, then converting it into JSON data.
