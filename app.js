@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 //console.log('About to fetch weather data.');
 
 //import apiKey from './key.js';
