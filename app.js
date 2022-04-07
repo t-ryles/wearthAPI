@@ -26,7 +26,7 @@ submitBTN.addEventListener('click', (weatherData) => {
 
 	async function weatherData() {
 		const response = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&&units=${units}&appid=${apiKey}`
+			`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=${units}&appid=${apiKey}`
 		);
 		//Checking the url response status
 		//The await key word is waiting for the response from the fetch function, then converting it into JSON data.
